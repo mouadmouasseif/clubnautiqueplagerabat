@@ -1,103 +1,82 @@
+'use client'
+import React from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import MeteoWidget from '@/components/Meteo';
+import Activechose from '@/components/Activieter';
+import Header from "@/components/Headrer";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Last";
+import { useState } from "react";
 
-export default function Home() {
+const images = {
+  hero: "/Image/hero.jpg",
+  background: "/Image/background.jpg",
+  hero2: "/Image/hero2.jpg",
+  kayak: "/Image/kayak.jpg",
+  surf: "/Image/surf.jpg",
+  bodyboard: "/Image/bodyboard.jpg",
+  paddle: "/Image/paddle.jpg",
+  sailing: "/Image/Sailing.jpg",
+};
+
+export default function HOMEPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div><Header />
+    <div className="w-full h-screen text-gray-900" >
+      {/* About Section */}
+      <section className="py-16 px-6 text-center min-h-screen flex flex-col justify-center items-center">
+        <h2 className="text-4xl text-blue-600 font-bold">SPORTS AQUATIQUE AND SURF IN RABAT</h2>
+        <p className="mt-4 max-w-2xl text-2xl mx-auto">
+          Un grand club nautique au Rabat Maroc qui propose des cours de Surf, Bodyboard, Paddle, Voile, Aviron et de Kayak.
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      {/* Classes Section */}
+     
+      
+        <Activechose />
+      
+      {/* Opening Hours Card */}
+      <section className="py-16 text-center justify-center">
+        <Card className="w-full mx-auto shadow-lg p-6">
+          <CardHeader>
+            <CardTitle className="text-4xl font-bold text-blue-600">Opening Hours</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <h1 className="text-2xl font-bold text-gray-600">Mardi - Vendredi</h1>
+            <h2 className="text-xl">10h00 - 17h00</h2>
+            <h1 className="text-2xl font-bold text-gray-600">Samedi - Dimanche</h1>
+            <h2 className="text-xl">9h00 - 18h00</h2>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Windguru Widget */}
+      <section className="py-16 text-center">
+        <MeteoWidget />
+      </section>
+
+      {/* Competition Section */}
+      <section className="py-16 text-center">
+        <h2 className="text-5xl text-white font-bold">FNIR</h2>
+        <p className="mt-4">Surfing season kick-off deals you can’t miss.</p>
+        <Button className="mt-4 bg-blue-500 hover:bg-blue-600">More</Button>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-16 text-center">
+        <h2 className="text-5xl text-white font-bold">Team</h2>
+        <p className="mt-4">Our Team In Your Service </p>
+        <Button className="mt-4 bg-blue-500 hover:bg-blue-600">More</Button>
+      </section>
+
+      {/* Contact Section */}
+      <Contact />
+      <Footer />
+      
+    </div>
     </div>
   );
 }
