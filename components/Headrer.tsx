@@ -8,9 +8,9 @@ import { Import, Instagram } from 'lucide-react';
 
 export default function Header() {
   const [images] = useState({
-    logo: "/Image/logo.png",
-    logoHover: "/Image/logo2.png",
-    hero: "/Image/hero.jpg",
+    logo: "./Image/logo.png",
+    logoHover: "./Image/logo2.png",
+    hero: "./Image/hero.jpg",
   });
 
   const [isHovered, setIsHovered] = useState(false);

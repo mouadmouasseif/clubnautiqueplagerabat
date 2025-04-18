@@ -6,14 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Activechose() {
 const images = {
-    hero: "/Image/hero.jpg",
-    background: "/Image/background.jpg",
-    hero2: "/Image/hero2.jpg",
-    kayak: "/Image/kayak.jpg",
-    surf: "/Image/surf.jpg",
-    bodyboard: "/Image/bodyboard.jpg",
-    paddle: "/Image/paddle.jpg",
-    sailing: "/Image/Sailing.jpg",
+    hero: "./Image/hero.jpg",
+    background: "./Image/background.jpg",
+    hero2: "./Image/hero2.jpg",
+    kayak: "./Image/kayak.jpg",
+    surf: "./Image/surf.jpg",
+    bodyboard: "./Image/bodyboard.jpg",
+    paddle: "./Image/paddle.jpg",
+    sailing: "./Image/Sailing.jpg",
   };
   return (
 <section className="py-16 relative w-full bg-cover bg-center text-center bg-gray-100">

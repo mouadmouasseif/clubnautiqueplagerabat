@@ -11,14 +11,14 @@ import Footer from "@/components/Last";
 import { useState } from "react";
 
 const images = {
-  hero: "/Image/hero.jpg",
-  background: "/Image/background.jpg",
-  hero2: "/Image/hero2.jpg",
-  kayak: "/Image/kayak.jpg",
-  surf: "/Image/surf.jpg",
-  bodyboard: "/Image/bodyboard.jpg",
-  paddle: "/Image/paddle.jpg",
-  sailing: "/Image/Sailing.jpg",
+  hero: "../Image/hero.jpg",
+  background: "../Image/background.jpg",
+  hero2: "../Image/hero2.jpg",
+  kayak: "../Image/kayak.jpg",
+  surf: "../Image/surf.jpg",
+  bodyboard: "../Image/bodyboard.jpg",
+  paddle: "../Image/paddle.jpg",
+  sailing: "../Image/Sailing.jpg",
 };
 
 export default function HOMEPage() {

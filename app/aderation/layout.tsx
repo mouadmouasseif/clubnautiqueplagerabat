@@ -5,14 +5,14 @@ import { useState } from "react";
 import Image from "next/image";
 import Menue from "@/components/Menue";
 const images = {
-  hero: "/Image/hero.jpg",
-  background: "/Image/background.jpg",
-  hero2: "/Image/hero2.jpg",
-  kayak: "/Image/kayak.jpg",
-  surf: "/Image/surf.jpg",
-  bodyboard: "/Image/bodyboard.jpg",
-  paddle: "/Image/paddle.jpg",
-  sailing: "/Image/Sailing.jpg",
+  hero: "./Image/hero.jpg",
+  background: "./Image/background.jpg",
+  hero2: "./Image/hero2.jpg",
+  kayak: "./Image/kayak.jpg",
+  surf: "./Image/surf.jpg",
+  bodyboard: "./Image/bodyboard.jpg",
+  paddle: "./Image/paddle.jpg",
+  sailing: "./Image/Sailing.jpg",
 };
 const inter = Inter({ subsets: ["latin"] });
 

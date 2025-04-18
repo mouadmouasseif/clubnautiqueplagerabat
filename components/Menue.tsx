@@ -10,8 +10,8 @@ export default function Menue() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const images = {
-    logo: "/Image/logo.png",
-    logoHover: "/Image/logo2.png",
+    logo: "./Image/logo.png",
+    logoHover: "./Image/logo2.png",
   };
 
   const toggleMenu = () => {
