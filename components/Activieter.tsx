@@ -24,7 +24,7 @@ const images = {
       <div 
         className="absolute inset-0 bg-cover bg-center" 
         style={{ backgroundImage: `url(${images[level.toLowerCase() as keyof typeof images]})` }}
-      />
+console.log("Activechose component rendered");      />
       <CardContent className="p-0 relative z-10 flex flex-col justify-between h-full">
         <div className=" text-center text-black">
           <h3 className="text-xl font-semibold bg-white bg-opacity-50 py-2 px-4 inline-block rounded-md">{level}</h3>
