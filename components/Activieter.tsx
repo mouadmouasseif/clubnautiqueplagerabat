@@ -23,7 +23,7 @@ const images = {
     <Card key={level} className="mt-6 w-70 h-90 overflow-hidden relative">
       <div 
         className="absolute inset-0 bg-cover bg-center" 
-        style={{ backgroundImage: `url(${images[level.toLowerCase()]})` }}
+        style={{ backgroundImage: `url(${images[level.toLowerCase() as keyof typeof images]})` }}
       />
       <CardContent className="p-0 relative z-10 flex flex-col justify-between h-full">
         <div className=" text-center text-black">
